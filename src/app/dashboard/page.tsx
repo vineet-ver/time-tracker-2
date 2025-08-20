@@ -50,7 +50,7 @@ export default async function DashboardPage() {
                 Welcome back, {user.name}!
               </h1>
               <p className="text-slate-600 dark:text-slate-400 mt-2">
-                Here's what's happening with your time tracking
+                Here&apos;s what&apos;s happening with your time tracking
               </p>
             </div>
             <form action="/api/auth/logout" method="post">
