@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAuthCookie } from "@/lib/cookies";
 import { verifyAuthToken } from "@/lib/auth";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function requireAuth(_req: NextRequest) {
   const token = await getAuthCookie();
   if (!token) {
@@ -14,5 +15,3 @@ export async function requireAuth(_req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 }
-
-
